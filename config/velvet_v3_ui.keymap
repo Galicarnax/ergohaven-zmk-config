@@ -114,10 +114,10 @@
 
         base {
             bindings = <
-&kp TAB        &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y  &kp U            &kp I                   &kp O                        &kp P     &kp BSPC
-&lt 1 ESC      &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H  &kp J            &kp K                   &kp L                        &kp SEMI  &kp SQT
-&kp LC(LSHFT)  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M            &kp COMMA               &kp DOT                      &kp FSLH  &mo 6
-                      &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 2  &cap_sen 3 LCLK  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
+&kp TAB        &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y  &kp U      &kp I                   &kp O                        &kp P     &kp BSPC
+&lt 1 ESC      &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H  &kp J      &kp K                   &kp L                        &kp SEMI  &kp SQT
+&kp LC(LSHFT)  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M      &kp COMMA               &kp DOT                      &kp FSLH  &mo 6
+                      &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 2  &sen_mo 3  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
             >;
 
             display-name = "Base";
