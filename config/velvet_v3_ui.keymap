@@ -98,6 +98,48 @@
             #binding-cells = <0>;
             bindings = <&kp LG(N0)>, <&kp LA(LG(N0))>;
         };
+
+        mpd_td_1: mpd_td_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MPD_TD_1";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(N1))>, <&kp LA(LC(LG(N1)))>;
+        };
+
+        mpd_td_2: mpd_td_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MPD_TD_2";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(NUMBER_2))>, <&kp LA(LC(LG(NUMBER_2)))>;
+        };
+
+        mpd_td_3: mpd_td_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MPD_TD_3";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(NUMBER_3))>, <&kp LA(LC(LG(NUMBER_3)))>;
+        };
+
+        mpd_td_4: mpd_td_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MPD_TD_4";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(NUMBER_4))>, <&kp LA(LC(LG(NUMBER_4)))>;
+        };
+
+        mpd_td_5: mpd_td_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MPD_TD_5";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(NUMBER_5))>, <&kp LA(LC(LG(NUMBER_5)))>;
+        };
+
+        mpd_td_0: mpd_td_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MPD_TD_0";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(N0))>, <&kp LA(LC(LG(N0)))>;
+        };
     };
 
     macros {
@@ -125,7 +167,7 @@
             bindings = <
 &kp TAB        &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y  &kp U      &kp I                   &kp O                        &kp P     &kp BSPC
 &lt 1 ESC      &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H  &kp J      &kp K                   &kp L                        &kp SEMI  &kp SQT
-&kp LC(LSHFT)  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M      &kp COMMA               &kp DOT                      &kp FSLH  &mo 6
+&kp LC(LSHFT)  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M      &kp COMMA               &kp DOT                      &kp FSLH  &mo 8
                       &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 2  &sen_mo 3  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
             >;
 
@@ -134,10 +176,10 @@
 
         nav {
             bindings = <
-&trans  &kp F1        &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6           &kp F7    &kp F8        &kp F9           &kp F10     &trans
-&trans  &kp CAPSLOCK  &trans  &trans  &trans  &none                     &kp LEFT         &kp DOWN  &kp UP        &kp RIGHT_ARROW  &kp INSERT  &trans
-&trans  &trans        &none   &none   &none   &none                     &kp LC(HOME)     &kp HOME  &kp PG_UP     &kp PAGE_DOWN    &kp END     &kp LC(END)
-                      &trans  &trans  &trans  &mo 7   &trans    &trans  &kp RIGHT_SHIFT  &trans    &kp LC(LEFT)  &kp LC(RIGHT)
+&trans  &kp F1        &kp F2           &kp F3               &kp F4  &kp F5                        &kp F6           &kp F7    &kp F8        &kp F9           &kp F10     &trans
+&trans  &kp CAPSLOCK  &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &trans  &none                         &kp LEFT         &kp DOWN  &kp UP        &kp RIGHT_ARROW  &kp INSERT  &trans
+&trans  &trans        &none            &none                &none   &none                         &kp LC(HOME)     &kp HOME  &kp PG_UP     &kp PAGE_DOWN    &kp END     &kp LC(END)
+                      &trans           &trans               &trans  &mo 9   &trans    &kp DELETE  &kp RIGHT_SHIFT  &trans    &kp LC(LEFT)  &kp LC(RIGHT)
             >;
 
             display-name = "Navigation";
@@ -211,13 +253,13 @@
 
         User2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &mpd_td_1  &mpd_td_2  &mpd_td_3      &mpd_td_4  &mpd_td_5                        &kp LC(LG(F))      &kp LC(LG(Y))        &kp LC(LG(B))  &kp LC(LG(O))  &trans                 &kp PAUSE_BREAK
+&trans  &trans     &trans     &trans         &trans     &kp LC(LG(R))                    &kp LC(LG(H))      &kp LC(LG(J))        &kp LC(LG(K))  &kp LC(LG(L))  &mpd_td_0              &trans
+&trans  &trans     &trans     &kp LC(LG(C))  &trans     &trans                           &trans             &kp LC(LG(PAGE_UP))  &trans         &trans         &kp LC(LG(PAGE_DOWN))  &trans
+                   &trans     &trans         &trans     &trans         &trans    &trans  &kp LC(LG(SPACE))  &trans               &trans         &trans
             >;
 
-            display-name = "User2";
+            display-name = "MPD";
         };
 
         User3 {
