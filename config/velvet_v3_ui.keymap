@@ -35,6 +35,8 @@
                 <&macro_param_1to1 &mo MACRO_PLACEHOLDER>;
 
             label = "NEW_MACRO";
+            wait-ms = <15>;
+            tap-ms = <50>;
         };
     };
 
