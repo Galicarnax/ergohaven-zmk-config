@@ -253,10 +253,10 @@
 
         User2 {
             bindings = <
-&trans  &mpd_td_1  &mpd_td_2  &mpd_td_3      &mpd_td_4  &mpd_td_5                        &kp LC(LG(F))      &kp LC(LG(Y))        &kp LC(LG(B))  &kp LC(LG(O))  &trans                 &kp PAUSE_BREAK
-&trans  &trans     &trans     &trans         &trans     &kp LC(LG(R))                    &kp LC(LG(H))      &kp LC(LG(J))        &kp LC(LG(K))  &kp LC(LG(L))  &mpd_td_0              &trans
-&trans  &trans     &trans     &kp LC(LG(C))  &trans     &trans                           &trans             &kp LC(LG(PAGE_UP))  &trans         &trans         &kp LC(LG(PAGE_DOWN))  &trans
-                   &trans     &trans         &trans     &trans         &trans    &trans  &kp LC(LG(SPACE))  &trans               &trans         &trans
+&trans  &mpd_td_1  &mpd_td_2  &mpd_td_3      &mpd_td_4  &mpd_td_5                        &kp LC(LG(F))      &kp LC(LG(Y))  &kp LC(LG(B))      &kp LC(LG(O))      &trans         &kp PAUSE_BREAK
+&trans  &trans     &trans     &trans         &trans     &kp LC(LG(R))                    &kp LC(LG(H))      &kp LC(LG(J))  &kp LC(LG(K))      &kp LC(LG(L))      &mpd_td_0      &trans
+&trans  &trans     &trans     &kp LC(LG(C))  &trans     &trans                           &trans             &kp LC(LG(P))  &kp LS(LC(LG(H)))  &kp LS(LC(LG(L)))  &kp LC(LG(N))  &trans
+                   &trans     &trans         &trans     &trans         &trans    &trans  &kp LC(LG(SPACE))  &trans         &trans             &trans
             >;
 
             display-name = "MPD";
@@ -264,13 +264,13 @@
 
         User3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans         &trans          &trans             &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp BACKSPACE  &kp DOWN_ARROW  &kp UP             &kp DELETE      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans         &trans          &trans             &trans          &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans          &kp LC(BACKSPACE)  &kp LC(DELETE)
             >;
 
-            display-name = "User3";
+            display-name = "Edit";
         };
     };
 };
