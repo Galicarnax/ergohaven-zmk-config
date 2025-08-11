@@ -61,6 +61,34 @@
             #binding-cells = <0>;
             bindings = <&kp LG(NUMBER_6)>, <&kp LA(LG(NUMBER_6))>;
         };
+
+        gui_td_7: gui_td_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_TD_7";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N7)>, <&kp LA(LG(N7))>;
+        };
+
+        gui_td_8: gui_td_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_TD_8";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N8)>, <&kp LA(LG(N8))>;
+        };
+
+        gui_td_9: gui_td_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_TD_9";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N9)>, <&kp LG(LA(N9))>;
+        };
+
+        gui_td_10: gui_td_10 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_TD_10";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N0)>, <&kp LA(LG(N0))>;
+        };
     };
 
     macros {
@@ -163,10 +191,10 @@
 
         User1 {
             bindings = <
-&trans  &gui_td_1  &trans  &trans  &trans  &trans                    &trans         &trans         &trans         &trans         &trans  &trans
-&trans  &trans     &trans  &trans  &trans  &trans                    &kp LA(LG(H))  &kp LA(LG(J))  &kp LA(LG(K))  &kp LA(LG(L))  &trans  &trans
-&trans  &trans     &trans  &trans  &trans  &trans                    &trans         &trans         &trans         &trans         &trans  &trans
-                   &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans         &trans         &trans
+&trans  &gui_td_1  &gui_td_2  &gui_td_3  &gui_td_4  &gui_td_5                    &gui_td_6      &gui_td_7      &gui_td_8      &gui_td_9      &gui_td_10  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                       &kp LA(LG(H))  &kp LA(LG(J))  &kp LA(LG(K))  &kp LA(LG(L))  &trans      &trans
+&trans  &trans     &trans     &trans     &trans     &trans                       &trans         &trans         &trans         &trans         &trans      &trans
+                   &trans     &trans     &trans     &trans     &trans    &trans  &trans         &trans         &trans         &trans
             >;
 
             display-name = "GUI-2";
