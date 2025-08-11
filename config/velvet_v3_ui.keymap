@@ -46,7 +46,7 @@
             bindings = <
 &kp TAB        &kp Q  &kp W           &kp E      &kp R           &kp T                               &kp Y  &kp U      &kp I                   &kp O                        &kp P     &kp BSPC
 &lt 1 ESC      &kp A  &kp S           &kp D      &kp F           &kp G                               &kp H  &kp J      &kp K                   &kp L                        &kp SEMI  &kp SQT
-&kp LC(LSHFT)  &kp Z  &kp X           &kp C      &kp V           &kp B                               &kp N  &kp M      &kp COMMA               &kp DOT                      &kp FSLH  &kp RSHFT
+&kp LC(LSHFT)  &kp Z  &kp X           &kp C      &kp V           &kp B                               &kp N  &kp M      &kp COMMA               &kp DOT                      &kp FSLH  &mo 6
                       &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE    &kp RET  &mo 2  &sen_mo 3  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
             >;
 
@@ -110,10 +110,10 @@
 
         User0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LG(TAB)  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                           &kp LG(N6)       &kp LG(N7)  &kp LG(N8)     &kp LG(N9)   &kp LG(N0)    &trans
+&trans       &kp LG(A)   &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)                                  &kp LG(H)        &kp LG(J)   &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
+&trans       &kp LG(Z)   &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)                                  &kp LG(N)        &kp LG(M)   &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &trans
+                         &kp LEFT_ALT      &kp LCTRL         &kp LEFT_SHIFT    &trans            &trans    &kp LG(ENTER)  &lt 7 K_EXECUTE  &trans      &kp RCTRL      &kp RALT
             >;
 
             display-name = "User0";
