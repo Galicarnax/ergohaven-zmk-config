@@ -300,10 +300,10 @@
 
         User1 {
             bindings = <
-&trans  &gui_td_1  &gui_td_2  &gui_td_3  &gui_td_4      &gui_td_5                    &gui_td_6      &gui_td_7      &gui_td_8      &gui_td_9      &gui_td_10  &trans
-&trans  &trans     &trans     &trans     &kp LA(LG(F))  &trans                       &kp LA(LG(H))  &kp LA(LG(J))  &kp LA(LG(K))  &kp LA(LG(L))  &trans      &trans
-&trans  &trans     &trans     &trans     &trans         &trans                       &trans         &trans         &trans         &trans         &trans      &trans
-                   &trans     &trans     &trans         &trans     &trans    &trans  &trans         &trans         &trans         &trans
+&trans  &gui_td_1  &gui_td_2          &gui_td_3  &gui_td_4      &gui_td_5                    &gui_td_6      &gui_td_7      &gui_td_8      &gui_td_9      &gui_td_10  &trans
+&trans  &trans     &trans             &trans     &kp LA(LG(F))  &trans                       &kp LA(LG(H))  &kp LA(LG(J))  &kp LA(LG(K))  &kp LA(LG(L))  &trans      &trans
+&trans  &trans     &kp LG(LA(LC(X)))  &trans     &trans         &trans                       &trans         &trans         &trans         &trans         &trans      &trans
+                   &trans             &trans     &trans         &trans     &trans    &trans  &trans         &trans         &trans         &trans
             >;
 
             display-name = "GUI-2";
