@@ -140,6 +140,24 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LG(N0))>, <&kp LA(LC(LG(N0)))>;
         };
+
+        lang_switch_ru: lang_switch_ru {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LANG_SWITCH_RU";
+            bindings = <&mo>, <&layer_ru>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
+
+        lang_switch_en: lang_switch_en {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LANG_SWITCH_EN";
+            bindings = <&mo>, <&layer_en>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     macros {
@@ -157,6 +175,34 @@
             label = "NEW_MACRO";
             wait-ms = <15>;
             tap-ms = <50>;
+        };
+
+        to_ru: to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 10>;
+            label = "TO_RU";
+        };
+
+        to_en: to_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>;
+            label = "TO_EN";
+        };
+
+        layer_ru: layer_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_ru &kp LG(LA(R))>;
+            label = "LAYER_RU";
+        };
+
+        layer_en: layer_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp LG(LA(E))>;
+            label = "LAYER_EN";
         };
     };
 
