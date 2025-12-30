@@ -29,6 +29,7 @@
             hold-while-undecided;
         };
 
+
         gui_td_1: gui_td_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "GUI_TD_1";
@@ -223,6 +224,7 @@
 
         base {
             bindings = <
+
 &kp TAB                  &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y  &kp U  &kp I                   &kp O                        &kp P     &kp BSPC
 &lt 1 ESC                &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H  &kp J  &kp K                   &kp L                        &kp SEMI  &kp SQT
 &mt LC(LSHFT) LA(LG(E))  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M  &kp COMMA               &kp DOT                      &kp FSLH  &lt 8 LA(LG(R))
@@ -240,7 +242,7 @@
                       &trans           &trans               &trans  &mo 9   &trans    &kp DELETE  &kp RIGHT_SHIFT  &trans    &kp LC(LEFT)  &kp LC(RIGHT)
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym {
@@ -267,10 +269,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             display-name = "Scroll";
@@ -356,7 +358,7 @@
 &trackball { cpi = <1200>; };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 9 20>;
+    input-processors = <&zip_auto_mouse 4 500>, <&zip_xy_scaler 9 20>;
 
     scroller {
         layers = <4>;
