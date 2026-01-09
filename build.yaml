@@ -1,6 +1,19 @@
 ---
 include:
 
+
+  - board: ergohaven
+    shield: velvet_v3_ui_left
+  - board: ergohaven
+    shield: velvet_v3_ui_right
+    keymap: velvet_v3_ui_ruen
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: velvet_v3_ui_right_ruen-ergohaven-zmk
+  - board: ergohaven
+    shield: velvet_v3_ui_right
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: ergohaven
     shield: velvet_v3_ui_qube qube dongle_screen
     snippet: studio-rpc-usb-uart
@@ -12,3 +25,13 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: velvet_v3_ui_qube_ruen-ergohaven-zmk
+  - board: ergohaven
+    shield: velvet_v3_ui_right_qube
+
+  - board: ergohaven
+    shield: trackball
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  - board: ergohaven
+    shield: settings_reset
