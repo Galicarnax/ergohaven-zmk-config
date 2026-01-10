@@ -218,6 +218,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        mouse_left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <20 21>;
+        };
+
+        mouse_scroll {
+            bindings = <&msc MOVE_Y(10)>;
+            key-positions = <32 33>;
+        };
+
+        mouse_right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <44 45>;
+        };
+
+        mouse_sniper {
+            bindings = <&mo 5>;
+            key-positions = <16 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
