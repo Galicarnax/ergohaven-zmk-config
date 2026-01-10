@@ -389,7 +389,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        scrolling {
+            if-layers = <8>;
+            then-layer = <4>;
+        };
+    };
 };
 
 &trackball { cpi = <1000>; };
