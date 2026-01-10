@@ -238,31 +238,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        mouse_left_click {
-            bindings = <&mkp MB1>;
-            key-positions = <20 21>;
-        };
-
-        mouse_scroll {
-            bindings = <&mo 4>;
-            key-positions = <32 33>;
-        };
-
-        mouse_right_click {
-            bindings = <&mkp MB2>;
-            key-positions = <44 45>;
-        };
-
-        mouse_sniper {
-            bindings = <&mo 5>;
-            key-positions = <16 15>;
-            slow-release;
-            layers = <5>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -401,7 +377,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        scrolling {
+        sniper_conditional_layer {
             if-layers = <8>;
             then-layer = <5>;
         };
