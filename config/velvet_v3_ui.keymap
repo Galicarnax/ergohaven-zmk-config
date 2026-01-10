@@ -159,6 +159,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
+
+        mouse_tap: mouse_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_TAP";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
     };
 
     macros {
@@ -228,7 +238,7 @@
         };
 
         mouse_scroll {
-            bindings = <&msc MOVE_Y(10)>;
+            bindings = <&mo 4>;
             key-positions = <32 33>;
         };
 
@@ -250,10 +260,10 @@
 
         base {
             bindings = <
-&kp TAB             &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y  &kp U  &kp I                   &kp O                        &kp P     &kp BSPC
-&lt 1 ESC           &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H  &kp J  &kp K                   &kp L                        &kp SEMI  &kp SQT
-&mt LC(LSHFT) LPAR  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M  &kp COMMA               &kp DOT                      &kp FSLH  &lt 8 RPAR
-                           &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 2  &none  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
+&kp TAB             &kp Q  &kp W           &kp E      &kp R           &kp T                                   &kp Y  &kp U  &kp I                   &kp O                        &kp P     &kp BSPC
+&lt 1 ESC           &kp A  &kp S           &kp D      &kp F           &kp G                                   &kp H  &kp J  &kp K                   &kp L                        &kp SEMI  &kp SQT
+&mt LC(LSHFT) LPAR  &kp Z  &kp X           &kp C      &kp V           &kp B                                   &kp N  &kp M  &kp COMMA               &kp DOT                      &kp FSLH  &lt 8 RPAR
+                           &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mouse_tap 6 MB1  &kp SPACE    &kp RET  &mo 2  &none  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
             >;
 
             display-name = "Base";
