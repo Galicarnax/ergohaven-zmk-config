@@ -9,11 +9,12 @@
 &mt {
     quick-tap-ms = <200>;
     hold-while-undecided;
+    flavor = "balanced";
 };
 
 &lt {
     quick-tap-ms = <200>;
-    flavor = "hold-preferred";
+    flavor = "balanced";
     hold-while-undecided;
 };
 
@@ -239,6 +240,8 @@
         mouse_sniper {
             bindings = <&mo 5>;
             key-positions = <16 15>;
+            slow-release;
+            layers = <5>;
         };
     };
 
