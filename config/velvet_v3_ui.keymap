@@ -247,7 +247,7 @@
         };
 
         mouse_scroll {
-            bindings = <&mo 4>;
+            bindings = <&msc MOVE_X(15)>;
             key-positions = <15 14>;
         };
 
