@@ -255,6 +255,11 @@
             bindings = <&mkp MB2>;
             key-positions = <28 27>;
         };
+
+        mouse_left_click_2 {
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
