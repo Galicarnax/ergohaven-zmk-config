@@ -260,6 +260,16 @@
             bindings = <&mkp MB1>;
             key-positions = <19 20>;
         };
+
+        mouse_scroll_2 {
+            bindings = <&mo 4>;
+            key-positions = <20 21>;
+        };
+
+        mouse_right_click_2 {
+            bindings = <&mkp MB2>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
