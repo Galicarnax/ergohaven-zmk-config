@@ -200,7 +200,7 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 10>;
+            bindings = <&to 11>;
             label = "TO_RU";
         };
 
@@ -296,7 +296,7 @@
 &trans  &kp F1  &kp F2           &kp F3               &kp F4  &kp F5                        &kp F6        &kp F7    &kp F8        &kp F9           &kp F10     &trans
 &trans  &trans  &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &trans  &none                         &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT_ARROW  &kp INSERT  &trans
 &trans  &trans  &kp DELETE       &none                &none   &none                         &kp LC(HOME)  &kp HOME  &kp PG_UP     &kp PAGE_DOWN    &kp END     &kp LC(END)
-                &trans           &trans               &trans  &mo 12  &trans    &kp DELETE  &mo 9         &trans    &kp LC(LEFT)  &kp LC(RIGHT)
+                &trans           &trans               &trans  &mo 10  &trans    &kp DELETE  &mo 9         &trans    &kp LC(LEFT)  &kp LC(RIGHT)
             >;
 
             display-name = "Navigation";
@@ -349,7 +349,7 @@
         User0 {
             bindings = <
 &kp LG(TAB)  &none      &none         &mo 5      &kp LG(F)       &kp LG(T)                           &kp LG(Y)        &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &kp LG(BACKSPACE)
-&mo 12       &kp LG(A)  &kp LG(S)     &kp LG(D)  &mkp MB1        &mo 4                               &kp LG(H)        &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
+&mo 10       &kp LG(A)  &kp LG(S)     &kp LG(D)  &mkp MB1        &mo 4                               &kp LG(H)        &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
 &trans       &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)       &kp LG(B)                           &kp LG(N)        &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &kp LG(BACKSLASH)
                         &kp LEFT_ALT  &mkp MB2   &kp LEFT_SHIFT  &trans     &trans    &kp LG(ENTER)  &lt 7 LG(SPACE)  &trans     &kp RCTRL      &kp RALT
             >;
@@ -390,13 +390,24 @@
             display-name = "Edit";
         };
 
+        win_arrows {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans      &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans      &trans               &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans      &trans
+            >;
+
+            label = "WinArrows";
+        };
+
         ru {
             display-name = "Ru";
             bindings = <
 &kp TAB              &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y   &kp U  &kp I                   &kp O                        &kp P     &kp BSPC
 &lt 1 ESC            &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H   &kp J  &kp K                   &kp L                        &kp SEMI  &kp SQT
 &lang_switch_en 0 0  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N   &kp M  &kp COMMA               &kp DOT                      &kp FSLH  &mo 8
-                            &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 11  &none  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
+                            &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 12  &none  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
             >;
         };
 
@@ -407,15 +418,6 @@
 &kp TILDE  &kp EXCL       &kp AT_SIGN    &kp HASH          &kp DOLLAR    &kp PRCNT                      &kp CARET  &en LS(N7)  &kp ASTRK         &kp PIPE           &kp COLON  &kp AT_SIGN
 &trans     &kp BACKSLASH  &kp LPAR       &kp RPAR          &kp UNDER     &kp MINUS                      &kp PLUS   &kp EQUAL   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QMARK  &trans
                           &kp LESS_THAN  &kp GREATER_THAN  &trans        &mo 7         &none    &trans  &trans     &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans      &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans      &trans               &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans      &trans
             >;
         };
     };
