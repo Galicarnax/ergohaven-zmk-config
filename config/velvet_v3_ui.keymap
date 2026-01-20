@@ -349,7 +349,7 @@
         User0 {
             bindings = <
 &kp LG(TAB)  &none      &none         &mo 5      &kp LG(F)       &kp LG(T)                           &kp LG(Y)        &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &kp LG(BACKSPACE)
-&trans       &kp LG(A)  &kp LG(S)     &kp LG(D)  &mkp MB1        &mo 4                               &kp LG(H)        &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
+&mo 9        &kp LG(A)  &kp LG(S)     &kp LG(D)  &mkp MB1        &mo 4                               &kp LG(H)        &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
 &trans       &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)       &kp LG(B)                           &kp LG(N)        &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &kp LG(BACKSLASH)
                         &kp LEFT_ALT  &mkp MB2   &kp LEFT_SHIFT  &trans     &trans    &kp LG(ENTER)  &lt 7 LG(SPACE)  &trans     &kp RCTRL      &kp RALT
             >;
