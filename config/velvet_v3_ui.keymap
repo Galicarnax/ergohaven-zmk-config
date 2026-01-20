@@ -295,7 +295,7 @@
             bindings = <
 &trans  &kp F1  &kp F2           &kp F3               &kp F4  &kp F5                        &kp F6           &kp F7    &kp F8        &kp F9           &kp F10     &trans
 &trans  &trans  &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &trans  &none                         &kp LEFT         &kp DOWN  &kp UP        &kp RIGHT_ARROW  &kp INSERT  &trans
-&trans  &trans  &none            &none                &none   &none                         &kp LC(HOME)     &kp HOME  &kp PG_UP     &kp PAGE_DOWN    &kp END     &kp LC(END)
+&trans  &trans  &kp DELETE       &none                &none   &none                         &kp LC(HOME)     &kp HOME  &kp PG_UP     &kp PAGE_DOWN    &kp END     &kp LC(END)
                 &trans           &trans               &trans  &mo 9   &trans    &kp DELETE  &kp RIGHT_SHIFT  &trans    &kp LC(LEFT)  &kp LC(RIGHT)
             >;
 
