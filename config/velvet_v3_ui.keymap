@@ -392,10 +392,10 @@
 
         win_arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans      &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans      &trans               &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans      &trans
+&trans  &kp LG(F1)  &kp LG(F2)  &kp LG(F3)  &kp LG(F4)  &kp LG(F5)                    &kp LG(F6)    &kp LG(F7)    &kp LG(F8)  &kp LG(F9)           &kp LG(F10)  &trans
+&trans  &trans      &trans      &trans      &trans      &trans                        &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT_ARROW)  &trans       &trans
+&trans  &trans      &trans      &trans      &trans      &trans                        &trans        &trans        &trans      &trans               &trans       &trans
+                    &trans      &trans      &trans      &trans      &trans    &trans  &trans        &trans        &trans      &trans
             >;
 
             label = "WinArrows";
