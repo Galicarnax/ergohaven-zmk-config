@@ -9,12 +9,11 @@
 &mt {
     quick-tap-ms = <200>;
     hold-while-undecided;
-    flavor = "balanced";
 };
 
 &lt {
     quick-tap-ms = <200>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
     hold-while-undecided;
 };
 
