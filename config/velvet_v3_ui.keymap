@@ -240,21 +240,6 @@
     combos {
         compatible = "zmk,combos";
 
-        mouse_left_click {
-            bindings = <&mkp MB1>;
-            key-positions = <16 15>;
-        };
-
-        mouse_scroll {
-            bindings = <&mo 4>;
-            key-positions = <15 14>;
-        };
-
-        mouse_right_click {
-            bindings = <&mkp MB2>;
-            key-positions = <28 27>;
-        };
-
         mouse_left_click_2 {
             bindings = <&mkp MB1>;
             key-positions = <19 20>;
@@ -271,8 +256,8 @@
         };
 
         mouse_sniper {
-            bindings = <&mo 5>;
-            key-positions = <8 9>;
+            bindings = <&mo 4>;
+            key-positions = <36 37>;
         };
     };
 
@@ -281,10 +266,10 @@
 
         base {
             bindings = <
-&kp TAB             &kp Q  &kp W           &kp E      &kp R           &kp T                        &kp Y  &kp U  &kp I                   &kp O                        &kp P     &kp BSPC
-&lt 1 ESC           &kp A  &kp S           &kp D      &kp F           &kp G                        &kp H  &kp J  &kp K                   &kp L                        &kp SEMI  &kp APOS
-&mt LC(LSHFT) LPAR  &kp Z  &kp X           &kp C      &kp V           &kp B                        &kp N  &kp M  &kp COMMA               &kp DOT                      &kp FSLH  &lt 8 RPAR
-                           &mt LALT GRAVE  &kp LCTRL  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &mo 2  &none  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
+&kp TAB                &kp Q  &kp W  &kp E     &kp R           &kp T                        &kp Y         &kp U  &kp I                   &kp O                        &kp P     &kp BSPC
+&lt 1 ESC              &kp A  &kp S  &kp D     &kp F           &kp G                        &kp H         &kp J  &kp K                   &kp L                        &kp SEMI  &kp APOS
+&mt LEFT_CONTROL LPAR  &kp Z  &kp X  &kp C     &kp V           &kp B                        &kp N         &kp M  &kp COMMA               &kp DOT                      &kp FSLH  &mt RIGHT_CONTROL RPAR
+                              &mo 5  &mkp MB1  &kp LEFT_SHIFT  &mo 6  &kp SPACE    &kp RET  &lt 2 K_EXEC  &none  &mt RCTRL LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET
             >;
 
             display-name = "Base";
