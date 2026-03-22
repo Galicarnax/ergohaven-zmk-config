@@ -99,46 +99,11 @@
             bindings = <&kp LG(N0)>, <&kp LA(LG(N0))>;
         };
 
-        mpd_td_1: mpd_td_1 {
+        mpd_td_r: mpd_td_r {
             compatible = "zmk,behavior-tap-dance";
-            label = "MPD_TD_1";
+            label = "MPD_TD_R";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(N1))>, <&kp LA(LC(LG(N1)))>;
-        };
-
-        mpd_td_2: mpd_td_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MPD_TD_2";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(NUMBER_2))>, <&kp LA(LC(LG(NUMBER_2)))>;
-        };
-
-        mpd_td_3: mpd_td_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MPD_TD_3";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(NUMBER_3))>, <&kp LA(LC(LG(NUMBER_3)))>;
-        };
-
-        mpd_td_4: mpd_td_4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MPD_TD_4";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(NUMBER_4))>, <&kp LA(LC(LG(NUMBER_4)))>;
-        };
-
-        mpd_td_5: mpd_td_5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MPD_TD_5";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(NUMBER_5))>, <&kp LA(LC(LG(NUMBER_5)))>;
-        };
-
-        mpd_td_0: mpd_td_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MPD_TD_0";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LG(N0))>, <&kp LA(LC(LG(N0)))>;
+            bindings = <&kp LC(LG(R))>, <&kp LA(LC(LG(R)))>;
         };
 
         lang_switch_ru: lang_switch_ru {
@@ -332,10 +297,10 @@
 
         User0 {
             bindings = <
-&kp LG(TAB)  &none      &none         &mo 5      &kp LG(F)       &kp LG(T)                           &kp LG(Y)        &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &kp LG(BACKSPACE)
-&mo 10       &kp LG(A)  &kp LG(S)     &kp LG(D)  &mkp MB1        &mo 4                               &kp LG(H)        &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
-&trans       &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)       &kp LG(B)                           &kp LG(N)        &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &kp LG(BACKSLASH)
-                        &kp LEFT_ALT  &mkp MB2   &kp LEFT_SHIFT  &trans     &trans    &kp LG(ENTER)  &lt 7 LG(SPACE)  &trans     &kp RCTRL      &kp RALT
+&kp LG(TAB)  &none      &none         &none      &mpd_td_r       &kp LG(T)                    &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &kp LG(BACKSPACE)
+&mo 10       &kp LG(A)  &kp LG(S)     &kp LG(D)  &kp LG(F)       &kp LG(G)                    &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
+&trans       &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)       &kp LG(B)                    &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &kp LG(BACKSLASH)
+                        &kp LEFT_ALT  &mkp MB2   &kp LEFT_SHIFT  &trans     &trans    &trans  &lt 7 LG(RET)  &trans     &kp RCTRL      &kp RALT
             >;
 
             display-name = "GUI-1";
@@ -354,10 +319,10 @@
 
         User2 {
             bindings = <
-&trans  &mpd_td_1  &mpd_td_2  &mpd_td_3      &mpd_td_4  &mpd_td_5                        &kp LC(LG(F))      &kp LC(LG(Y))  &kp LC(LG(B))      &kp LC(LG(O))      &trans         &kp PAUSE_BREAK
-&trans  &trans     &trans     &trans         &trans     &kp LC(LG(R))                    &kp LC(LG(H))      &kp LC(LG(J))  &kp LC(LG(K))      &kp LC(LG(L))      &mpd_td_0      &trans
-&trans  &trans     &trans     &kp LC(LG(C))  &trans     &trans                           &trans             &kp LC(LG(P))  &kp LS(LC(LG(H)))  &kp LS(LC(LG(L)))  &kp LC(LG(N))  &trans
-                   &trans     &trans         &trans     &trans         &trans    &trans  &kp LC(LG(SPACE))  &trans         &trans             &trans
+&trans  &mpd_td_r  &none   &none          &none   &none                            &kp LC(LG(F))      &kp LC(LG(Y))  &kp LC(LG(B))      &kp LC(LG(O))      &trans         &kp PAUSE_BREAK
+&trans  &trans     &trans  &trans         &trans  &kp LC(LG(R))                    &kp LC(LG(H))      &kp LC(LG(J))  &kp LC(LG(K))      &kp LC(LG(L))      &none          &trans
+&trans  &trans     &trans  &kp LC(LG(C))  &trans  &trans                           &trans             &kp LC(LG(P))  &kp LS(LC(LG(H)))  &kp LS(LC(LG(L)))  &kp LC(LG(N))  &trans
+                   &trans  &trans         &trans  &trans         &trans    &trans  &kp LC(LG(SPACE))  &trans         &trans             &trans
             >;
 
             display-name = "MPD";
