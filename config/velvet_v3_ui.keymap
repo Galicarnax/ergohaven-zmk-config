@@ -142,6 +142,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        rclick_sniper: rclick_sniper {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RCLICK_SNIPER";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
     };
 
     macros {
@@ -231,10 +240,10 @@
 
         base {
             bindings = <
-&kp TAB                &kp Q  &kp W         &kp E  &kp R     &kp T                                         &kp Y         &kp U  &kp I             &kp O              &kp P     &kp BSPC
-&lt 1 ESC              &kp A  &kp S         &kp D  &kp F     &kp G                                         &kp H         &kp J  &kp K             &kp L              &kp SEMI  &kp APOS
-&mt LEFT_CONTROL LPAR  &kp Z  &kp X         &kp C  &kp V     &kp B                                         &kp N         &kp M  &kp COMMA         &kp DOT            &kp FSLH  &mt RIGHT_CONTROL RPAR
-                              &kp LEFT_ALT  &mo 5  &mkp MB1  &lt 6 K_EXECUTE  &kp SPACE    &kp LEFT_SHIFT  &lt 2 RETURN  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp TAB                &kp Q  &kp W         &kp E                 &kp R     &kp T                                           &kp Y         &kp U  &kp I             &kp O              &kp P     &kp BSPC
+&lt 1 ESC              &kp A  &kp S         &kp D                 &kp F     &kp G                                           &kp H         &kp J  &kp K             &kp L              &kp SEMI  &kp APOS
+&mt LEFT_CONTROL LPAR  &kp Z  &kp X         &kp C                 &kp V     &kp B                                           &kp N         &kp M  &kp COMMA         &kp DOT            &kp FSLH  &mt RIGHT_CONTROL RPAR
+                              &kp LEFT_ALT  &rclick_sniper 5 MB2  &mkp MB1  &lt 6 K_EXECUTE  &lt 4 SPACE    &kp LEFT_SHIFT  &lt 2 RETURN  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             display-name = "Base";
