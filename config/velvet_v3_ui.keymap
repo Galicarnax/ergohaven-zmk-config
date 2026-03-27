@@ -17,6 +17,11 @@
     hold-while-undecided;
 };
 
+&mmv {
+    time-to-max-speed-ms = <160>;
+    acceleration-exponent = <2>;
+};
+
 / {
     behaviors {
         cap_sen: cap_sen {
