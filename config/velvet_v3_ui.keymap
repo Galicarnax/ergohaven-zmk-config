@@ -246,7 +246,7 @@
         };
 
         mouse_sniper {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <37 38>;
         };
     };
@@ -383,7 +383,7 @@
     input-processors = <&zip_xy_scaler 9 20>;
 
     scroller {
-        layers = <4>;
+        layers = <3>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 32>,
@@ -391,7 +391,7 @@
     };
 
     sniper {
-        layers = <5>;
+        layers = <4>;
         input-processors = <&zip_xy_scaler 1 10>;
     };
 };
