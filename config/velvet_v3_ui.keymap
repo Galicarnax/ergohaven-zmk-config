@@ -9,6 +9,7 @@
 &mt {
     quick-tap-ms = <200>;
     hold-while-undecided;
+    require-prior-idle-ms = <200>;
 };
 
 &lt {
