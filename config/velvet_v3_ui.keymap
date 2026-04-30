@@ -285,7 +285,7 @@
             bindings = <
 &kp GRAVE             &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                    &kp N6     &kp N7         &kp N8            &kp N9             &kp N0     &trans
 &kp TILDE             &kp EXCL       &kp AT_SIGN    &kp HASH          &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPERSAND  &kp ASTRK         &kp PIPE           &kp COLON  &kp AT_SIGN
-&kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp LPAR       &kp RPAR          &kp UNDER     &kp MINUS                       &kp PLUS   &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QMARK  &kp RIGHT_PARENTHESIS
+&kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp LPAR       &kp RPAR          &kp UNDER     &kp MINUS                       &kp PLUS   &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QMARK  &kp LC(LG(SPACE))
                                      &kp LESS_THAN  &kp GREATER_THAN  &trans        &mo 6         &trans    &trans  &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
