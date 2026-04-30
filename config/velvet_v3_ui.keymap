@@ -283,10 +283,10 @@
 
         sym {
             bindings = <
-&kp GRAVE             &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                    &kp N6     &kp N7         &kp N8            &kp N9             &kp N0     &trans
-&kp TILDE             &kp EXCL       &kp AT_SIGN    &kp HASH          &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPERSAND  &kp ASTRK         &kp PIPE           &kp COLON  &kp AT_SIGN
-&kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp LPAR       &kp RPAR          &kp UNDER     &kp MINUS                       &kp PLUS   &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QMARK  &kp LC(LG(SPACE))
-                                     &kp LESS_THAN  &kp GREATER_THAN  &trans        &mo 6         &trans    &trans  &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp GRAVE  &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                    &kp N6     &kp N7         &kp N8            &kp N9             &kp N0     &trans
+&kp TILDE  &kp EXCL       &kp AT_SIGN    &kp HASH          &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPERSAND  &kp ASTRK         &kp PIPE           &kp COLON  &kp AT_SIGN
+&trans     &kp BACKSLASH  &kp LPAR       &kp RPAR          &kp UNDER     &kp MINUS                       &kp PLUS   &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QMARK  &kp LC(LG(SPACE))
+                          &kp LESS_THAN  &kp GREATER_THAN  &trans        &mo 6         &trans    &trans  &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             display-name = "NumSym";
@@ -318,7 +318,7 @@
             bindings = <
 &kp LG(TAB)  &none      &none         &none      &mpd_td_r       &kp LG(T)                    &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &kp LG(BACKSPACE)
 &mo 8        &kp LG(A)  &kp LG(S)     &kp LG(D)  &kp LG(F)       &kp LG(G)                    &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMI)  &kp LG(SQT)
-&trans       &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)       &kp LG(B)                    &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &kp LG(BACKSLASH)
+&trans       &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)       &kp LG(B)                    &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &kp RIGHT_CONTROL
                         &kp LEFT_ALT  &mkp MB2   &kp LEFT_SHIFT  &trans     &trans    &trans  &lt 6 LG(RET)  &trans     &kp RCTRL      &kp RALT
             >;
 
